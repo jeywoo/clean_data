@@ -1,16 +1,17 @@
 SETUP: Human Activity Recognition Using Smartphones Dataset
+
 'Raw' data: 
 Data set is divided into train and test with text files containing data on: 
-	subject   [subject_train.txt, subject_test.txt] (30 subjects identified by integers 1 to 30, divided into train (70%) and test groups (30%)) 
-	activity [y_train.txt, y_test.txt] (integers 1 to 6 corresponding to activities indicated in activity_labels.txt)
-	features   [X_train.txt, X_test.txt] (measurement values of 561 feature vector whose variable names are indicated in features.txt)
+	subject   [subject_train.txt, subject_test.txt] (30 subjects identified by integers 1 to 30, divided into train (70%) 	and test groups (30%)) ;
+	activity [y_train.txt, y_test.txt] (integers 1 to 6 corresponding to activities indicated in activity_labels.txt);
+	features   [X_train.txt, X_test.txt] (measurement values of 561 feature vector whose variable names are indicated in 	features.txt);
 
 Goals:
-1) Merge training and test sets to create one data set. 
-2) Extract only the measurements on the mean and standard deviation for each measurement. 
-3) Use descriptive activity names to name the activities in the data set. 
-4) Appropriately label the data set with descriptive variable names. 
-5) Create a second, independent tidy data set with the average of each variable for each activity and each subject.
+1. Merge training and test sets to create one data set. 
+2. Extract only the measurements on the mean and standard deviation for each measurement. 
+3. Use descriptive activity names to name the activities in the data set. 
+4. Appropriately label the data set with descriptive variable names. 
+5. Create a second, independent tidy data set with the average of each variable for each activity and each subject.
 
 
 Codebook:
