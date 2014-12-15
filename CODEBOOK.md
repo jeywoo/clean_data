@@ -62,8 +62,8 @@ and is ready for STEP 5.
 
 STEP 5: From 'data' a second, independent tidy data set called 'mean_subjectactivity' 
 with the average of each variable for each activity and each subject is created by
-grouping 'data' by subject and applying the average for each column.
+grouping 'data' by subject and activity and then applying the average to the 66 feature variables.
 Variable names are still the same but the size of the data table is reduced from 10299 x 68
-to 180 x 68. 180 coming from 30 (subjects) x 6 (activities). 
+to 180 x 68, 180 coming from 30 (subjects) x 6 (activities). 
 
 This tidy data table is written out into 'tidy.txt' in the current working directory.
