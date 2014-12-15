@@ -16,20 +16,20 @@ Goals:
 
 Codebook:
 
-PRELIMINARY STEP: Load file contents into workspace
-	Read feature variable names from features.txt, drop the numbers and just save the names 
-	Read activity labels activity_labels.txt, drop the numbers and just save the names
-	Read train dataset into 'train'
-	Read test dataset into 'test'
+PRELIMINARY STEP: Load file contents into workspace.
+	Read feature variable names from features.txt, drop the numbers and just save the names.
+	Read activity labels activity_labels.txt, drop the numbers and just save the names.
+	Read train dataset into 'train'.
+	Read test dataset into 'test'.
 
-STEP 1: Merge 'train' and 'test' data tables into a data table called 'data'
+STEP 1: Merge 'train' and 'test' data tables into a data table called 'data'.
 	Rename variables of 'data' as "subject","feature_vector","activity" 
-	corresponding to reading files 'subject_*.txt', 'X_*.txt', and 'y_*.txt' respectively.
-		subject is saved as an integer (just for arranging purposes) 
-		feature_vector initially a long string
+	corresponding to reading files 'subject_*.txt', 'X_*.txt', and 'y_*.txt' respectively:
+		subject is saved as an integer (just for arranging purposes); 
+		feature_vector initially a long string;
 		activity is saved as a factor
 
-STEP 2: Extract only the measurements on the mean and standard deviation for each measurement
+STEP 2: Extract only the measurements on the mean and standard deviation for each measurement.
 	Find feature variables that are mean and std only, those with 'mean-()' and 'std-()'.
 	This results to 66 feature-variables out of the 561 features.
 	meanFrequency measurements are rejected since these do not correspond to the mean of a certain 
@@ -48,9 +48,9 @@ STEP 3: Use descriptive activity names for 'activity' column in 'data'.
 	5 to 'STANDING'
 	6 to 'LAYING'
 
-STEP 4: Appropriately label the data set with descriptive variable names
+STEP 4: Appropriately label the data set with descriptive variable names.
 	Names in features.txt are used but '()' in the names are dropped and '-' are replaced with '_'.
-	ex: 'tBodyAcc-mean()-X' to 'tBodyAcc_mean_X'
+	ex: 'tBodyAcc-mean()-X' to 'tBodyAcc_mean_X'.
 	The columns of feature variables are then appended to the data table 'data'.
 
 
