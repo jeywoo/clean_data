@@ -40,7 +40,7 @@ STEP 2: Extract only the measurements on the mean and standard deviation for eac
 
 	A function is defined to extract just the values of the feature vector (a long string) 
 	that correspond to mean and std and returns it as a numeric column vector. 
-	This functions is looped through the entire number of observations to create a 10299 x 66 numeric data table.
+	This function is looped through the entire number of observations to create a 10299 x 66 numeric data table.
 	Then the long string 'feature_vector' column is deleted from the preliminary data set. 
 
 STEP 3: Use descriptive activity names for 'activity' column in 'data'. 
