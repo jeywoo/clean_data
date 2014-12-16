@@ -30,7 +30,7 @@ activity <- sapply(
 
 #Read train dataset
 dirtrain = paste0(datadir,"/train/")
-trainfiles = grep("txt$",list.files(dirtrain,include.dirs = T),value = T)
+trainfiles = grep("txt$",list.files(dirtrain,include.dirs = F),value = T)
 train = as.data.table(
                       lapply( 
                               sapply(dirtrain,paste0,trainfiles)   
@@ -39,7 +39,7 @@ train = as.data.table(
 
 #Read test dataset
 dirtest = paste0(datadir,"/test/")
-testfiles = grep("txt$",list.files(dirtest,include.dirs = T),value = T)
+testfiles = grep("txt$",list.files(dirtest,include.dirs = F),value = T)
 test = as.data.table(
                      lapply( 
                             sapply(dirtest,paste0,testfiles)   
